@@ -9,7 +9,7 @@
 
 .resume-card {
   display: flex;
-  height: 560px;
+  height: 660px;
   width: 1000px;
   /* margin: 80px 0; */
 }
@@ -94,8 +94,8 @@
 .resume-screen-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  height: 560px;
+  justify-content: center;
+  height: 660px;
   width: 100%;
 }
 
@@ -218,7 +218,7 @@
   }
 
   .resume-bullet-details {
-    height: 560px;
+    height: 660px;
     padding: 0;
     width: fit-content;
   }

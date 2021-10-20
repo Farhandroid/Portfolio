@@ -117,45 +117,23 @@ const Resume = (props) => {
           subHeading={"FULL STACK DEVELOPER INTERN"}
           fromDate={"2021"}
           toDate={"Present"}
-          description={""}
         />
-          <ResumeHeading
+        <br />
+        <br />
+        <ResumeHeading
           heading={"Ehizeex Technoloy"}
           subHeading={"FULL STACK DEVELOPER INTERN"}
           fromDate={"2021"}
           toDate={"Present"}
-          description={""}
         />
-          <ResumeHeading
+        <br />
+        <br />
+        <ResumeHeading
           heading={"Ehizeex Technoloy"}
           subHeading={"FULL STACK DEVELOPER INTERN"}
           fromDate={"2021"}
           toDate={"Present"}
-          description={""}
         />
-        {/* <div className="experience-description">
-          <span className="resume-description-text">
-            Currently working as MERN stack web and mobile developer and also an
-            online instructor on udemy.
-          </span>
-        </div>
-        <div className="experience-description">
-          <span className="resume-description-text">
-            - Developed an ecommerce website for client with the dashboard for
-            managing the products, managing reviews, users, payment etc. .
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - Integrated the web app with backend services to create new user
-            onboarding application with dynamic form content.{" "}
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - I stretch my mental capacity to develope UI as per the given
-            designs.
-          </span>
-          <br />
-        </div> */}
       </div>
     </div>,
 
@@ -192,26 +170,17 @@ const Resume = (props) => {
       ))}
     </div>,
 
-    <div className="resume-screen-container" key="education">
+    /* Education */
+    <div
+      className="resume-screen-container"
+      key="education"
+    >
       <ResumeHeading
         heading={"East West University, Bangladesh"}
         subHeading={"BACHELOR OF  COMPUTER SCIENCE AND ENGINEERING TECHNOLOGY"}
         fromDate={"2014"}
         toDate={"2018"}
       />
-
-      {/* <ResumeHeading
-  heading={"National Youth Service Corps"}
-  subHeading={"Ministry Of Science And Technogy. Uyo Akwa Ibom State"}
-  fromDate={"2019"}
-  toDate={"2020"}
-/>
-<ResumeHeading
-  heading={"High School "}
-  subHeading={"Command Secondary School Mbiri"}
-  fromDate={"2007"}
-  toDate={"2012"}
-/> */}
     </div>,
 
     /* Interests */
@@ -220,10 +189,14 @@ const Resume = (props) => {
         heading="Teaching"
         description="Apart from being a tech enthusiast and a code writer, i also love to teach people what i know simply because i believe in sharing."
       />
+      <br />
+      <br />
       <ResumeHeading
         heading="Music"
         description="Listening to soothing music is something i can never compromise with, skimming through Spotify's pop songs charts is at times the best stress reliever that i can get my hands on."
       />
+      <br />
+      <br />
       <ResumeHeading
         heading="Competitive Gaming"
         description="I like to challenge my reflexes a lot while competing in football games, pushing the rank and having interactive gaming sessions excites me the most."
@@ -232,7 +205,7 @@ const Resume = (props) => {
   ];
 
   const handleCarousal = (index) => {
-    let offsetHeight = 560;
+    let offsetHeight = 660;
 
     let newCarousalOffset = {
       style: { transform: "translateY(" + index * offsetHeight * -1 + "px)" },
