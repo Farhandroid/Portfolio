@@ -44,75 +44,71 @@ const Resume = (props) => {
 
   /* STATIC RESUME DATA FOR THE LABELS*/
   const resumeBullets = [
-    { label: "Education", logoSrc: "education.svg" },
     { label: "Work History", logoSrc: "work-history.svg" },
     { label: "Programming Skills", logoSrc: "programming-skills.svg" },
     { label: "Projects", logoSrc: "projects.svg" },
+    { label: "Education", logoSrc: "education.svg" },
     { label: "Interests", logoSrc: "interests.svg" },
   ];
 
   //here we have
   const programmingSkillsDetails = [
-    { skill: "JavaScript", ratingPercentage: 85 },
-    { skill: "React JS", ratingPercentage: 85 },
-    { skill: "React Native", ratingPercentage: 85 },
-    { skill: "Express JS", ratingPercentage: 89 },
-    { skill: "Node JS", ratingPercentage: 89 },
-    { skill: "Mongo Db", ratingPercentage: 70 },
-    { skill: "Core Java", ratingPercentage: 80 },
-    { skill: "HTML", ratingPercentage: 80 },
-    { skill: "CSS", ratingPercentage: 80 },
+    { skill: "JavaScript", ratingPercentage: 80 },
+    { skill: "React JS", ratingPercentage: 80 },
+    { skill: "React Native", ratingPercentage: 80 },
+    { skill: "Swift", ratingPercentage: 80 },
+    { skill: "Kotlin", ratingPercentage: 70 },
+    { skill: "Java", ratingPercentage: 80 },
+    { skill: "Typescript", ratingPercentage: 60 },
+    { skill: "Firebase", ratingPercentage: 80 },
+    { skill: "Mysql", ratingPercentage: 70 },
+    { skill: "Laravel", ratingPercentage: 60 },
+    { skill: "Docker", ratingPercentage: 60 },
+    { skill: "Python", ratingPercentage: 60 },
   ];
 
   const projectsDetails = [
     {
-      title: "Personal Portfolio Website",
-      duration: { fromDate: "2020", toDate: "2021" },
+      title: "Companys Website",
+      duration: { fromDate: "", toDate: "" },
       description:
-        "A Personal Portfolio website to showcase all my details and projects at one place.",
-      subHeading: "Technologies Used: React JS, Bootsrap",
+        "This is a multilingual responsive website of a Renown Company of japan. It was made by pixel perfect design according to guideline provided in Figma. ",
+      subHeading:
+        "Technologies Used: React, Typescript, Gatsby, GraphQL, Contentful",
     },
     {
-      title: "Mobile E-shop ",
-      duration: { fromDate: "2020", toDate: "2021" },
+      title: "Admin Panel",
+      duration: { fromDate: "", toDate: "" },
       description:
-        "An ecommerce application designed to sell products online wth payment system integration",
+        "This is an admin panel of SAAS software. This web application shows summary of the company’s sales and handle large set of data. ",
       subHeading:
-        "Technologies Used:  React Native, Mongo DB, Express Js, Node Js, Redux.",
+        "Technologies Used:  React, Typescript, Redux, Firebase, Material Design,",
     },
     {
-      title: "Ecommerce Website ",
-      duration: { fromDate: "2020", toDate: "2021" },
+      title: "Inventory Management mobile application",
+      duration: { fromDate: "", toDate: "" },
       description:
-        "Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
+        "This is an inventory management application for IOS devices. This application allows the user to track the movement of products. It uses two external pieces of hardware to read data from the product's QR code and RFID.",
+      subHeading: "Technologies Used: Swift, Flask,  Python, RFID scanner, AWS",
+    },
+    {
+      title: "Cross platform Matching application",
+      duration: { fromDate: "", toDate: "" },
+      description:
+        " This is a matching application which match according to person’s place and interest. User need be authenticated by id like passport or Zairo card to use this app.",
       subHeading:
-        "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
+        "Technologies Used: React Native, Firebase, Microsoft Azure Face api, Rest api. Firebase, AWS, MYSQL",
+    },
+    {
+      title: "News mobile application with Admin panel",
+      duration: { fromDate: "", toDate: "" },
+      description:
+        " This is an android mobile application which which shows the news. It also have admin panel in which news can be created and summery can be known.",
+      subHeading: "Technologies Used: Kotlin, React, Redux, AWS, Firebase",
     },
   ];
 
   const resumeDetails = [
-    <div className="resume-screen-container" key="education">
-      <ResumeHeading
-        heading={"University of Legon Accra, Ghana"}
-        subHeading={"BACHELOR OF SCIENCE INFORMATION TECHNOLOGY"}
-        fromDate={"2014"}
-        toDate={"2018"}
-      />
-
-      <ResumeHeading
-        heading={"National Youth Service Corps"}
-        subHeading={"Ministry Of Science And Technogy. Uyo Akwa Ibom State"}
-        fromDate={"2019"}
-        toDate={"2020"}
-      />
-      <ResumeHeading
-        heading={"High School "}
-        subHeading={"Command Secondary School Mbiri"}
-        fromDate={"2007"}
-        toDate={"2012"}
-      />
-    </div>,
-
     /* WORK EXPERIENCE */
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
@@ -121,8 +117,23 @@ const Resume = (props) => {
           subHeading={"FULL STACK DEVELOPER INTERN"}
           fromDate={"2021"}
           toDate={"Present"}
+          description={""}
         />
-        <div className="experience-description">
+          <ResumeHeading
+          heading={"Ehizeex Technoloy"}
+          subHeading={"FULL STACK DEVELOPER INTERN"}
+          fromDate={"2021"}
+          toDate={"Present"}
+          description={""}
+        />
+          <ResumeHeading
+          heading={"Ehizeex Technoloy"}
+          subHeading={"FULL STACK DEVELOPER INTERN"}
+          fromDate={"2021"}
+          toDate={"Present"}
+          description={""}
+        />
+        {/* <div className="experience-description">
           <span className="resume-description-text">
             Currently working as MERN stack web and mobile developer and also an
             online instructor on udemy.
@@ -144,7 +155,7 @@ const Resume = (props) => {
             designs.
           </span>
           <br />
-        </div>
+        </div> */}
       </div>
     </div>,
 
@@ -181,6 +192,28 @@ const Resume = (props) => {
       ))}
     </div>,
 
+    <div className="resume-screen-container" key="education">
+      <ResumeHeading
+        heading={"East West University, Bangladesh"}
+        subHeading={"BACHELOR OF  COMPUTER SCIENCE AND ENGINEERING TECHNOLOGY"}
+        fromDate={"2014"}
+        toDate={"2018"}
+      />
+
+      {/* <ResumeHeading
+  heading={"National Youth Service Corps"}
+  subHeading={"Ministry Of Science And Technogy. Uyo Akwa Ibom State"}
+  fromDate={"2019"}
+  toDate={"2020"}
+/>
+<ResumeHeading
+  heading={"High School "}
+  subHeading={"Command Secondary School Mbiri"}
+  fromDate={"2007"}
+  toDate={"2012"}
+/> */}
+    </div>,
+
     /* Interests */
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
@@ -199,7 +232,7 @@ const Resume = (props) => {
   ];
 
   const handleCarousal = (index) => {
-    let offsetHeight = 360;
+    let offsetHeight = 560;
 
     let newCarousalOffset = {
       style: { transform: "translateY(" + index * offsetHeight * -1 + "px)" },
