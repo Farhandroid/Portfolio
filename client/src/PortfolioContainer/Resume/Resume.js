@@ -166,7 +166,7 @@ const Resume = (props) => {
         <div className="experience-container">
           <ResumeHeading
             heading={"W3Engineers , Bangladesh"}
-            subHeading={"SOFTWARE DEVELOPER"}
+            subHeading={"INTERN ENGINEER"}
             fromDate={"Sept 2018"}
             toDate={"Jan 2019"}
           />
