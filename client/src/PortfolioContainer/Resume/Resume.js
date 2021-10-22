@@ -3,6 +3,8 @@ import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Resume.css";
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+
 
 const Resume = (props) => {
   /* STATES */
@@ -65,6 +67,21 @@ const Resume = (props) => {
   ];
 
   const projectsDetails = [
+    {
+      title: "Personal Portfolio Website",
+      duration: { fromDate: "2020", toDate: "2021" },
+      description:
+        "A Personal Portfolio website to showcase all my details and projects at one place.",
+      subHeading: "Technologies Used: React JS, Bootsrap",
+    },
+    {
+      title: "Mobile E-shop ",
+      duration: { fromDate: "2020", toDate: "2021" },
+      description:
+        "An ecommerce application designed to sell products online wth payment system integration",
+      subHeading:
+        "Technologies Used:  React Native, Mongo DB, Express Js, Node Js, Redux.",
+    },
     {
       title: "Personal Portfolio Website",
       duration: { fromDate: "2020", toDate: "2021" },
@@ -199,7 +216,7 @@ const Resume = (props) => {
   ];
 
   const handleCarousal = (index) => {
-    let offsetHeight = 360;
+    let offsetHeight = 560;
 
     let newCarousalOffset = {
       style: { transform: "translateY(" + index * offsetHeight * -1 + "px)" },

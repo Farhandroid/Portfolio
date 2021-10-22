@@ -2,14 +2,14 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   min-height: fit-content;
   margin: 120px 0;
 }
 
 .resume-card {
   display: flex;
-  height: 360px;
+  height: 560px;
   width: 1000px;
   /* margin: 80px 0; */
 }
@@ -94,8 +94,8 @@
 .resume-screen-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  height: 360px;
+  justify-content: center;
+  height: 560px;
   width: 100%;
 }
 
@@ -201,7 +201,8 @@
   .resume-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+    justify-content: center;
   }
 
   .bullets {
@@ -218,9 +219,10 @@
   }
 
   .resume-bullet-details {
-    height: 360px;
+    height: 560px;
     padding: 0;
-    width: fit-content;
+    width: 100%;
+    justify-content: flex-start;
   }
 
   .resume-bullets {
@@ -230,5 +232,8 @@
 
   .selected-bullet {
     width: 100%;
+  }
+  .resume-screen-container {
+    justify-content: start;
   }
 }
