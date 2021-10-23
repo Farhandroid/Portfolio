@@ -111,7 +111,7 @@ const Resume = (props) => {
       title: "News mobile application with Admin panel",
       duration: { fromDate: "", toDate: "" },
       description:
-        " This is an android mobile application which which shows the news. It also have admin panel in which news can be created and summery can be known.",
+        " This is an android mobile application which shows the news. It also have admin panel in which news can be created and summery can be known.",
       subHeading: "Technologies Used: Kotlin, React, Redux, AWS, Firebase",
     },
   ];

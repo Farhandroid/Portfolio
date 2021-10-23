@@ -40,8 +40,9 @@
 .highlight {
   display: flex;
   align-items: center;
-  margin: 5px 0;
+  margin: 5px 0 0 0;
   font-size: 12px;
+  word-break:keep-all
 }
 .highlight-blob {
   height: 12px;
